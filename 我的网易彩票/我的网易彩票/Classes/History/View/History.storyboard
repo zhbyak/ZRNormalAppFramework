@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JgG-Ji-vWJ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--开奖信息-->
+        <scene sceneID="hHE-AW-yoq">
+            <objects>
+                <viewController id="GHv-Cf-jcx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LFo-32-ANW"/>
+                        <viewControllerLayoutGuide type="bottom" id="yuk-lL-85g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jXP-r5-nON">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="开奖信息" id="65v-cD-64x">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Zte-1a-pvY">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aZL-95-QOW">
+                                <rect key="frame" x="451" y="7" width="86" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="开奖推送" image="pushSettings">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1NQ-do-NMm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1269" y="336"/>
+        </scene>
+        <!--Nav Controller-->
+        <scene sceneID="y8M-yv-uiJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JgG-Ji-vWJ" customClass="ZRNavController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NUH-vz-nNz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GHv-Cf-jcx" kind="relationship" relationship="rootViewController" id="0Fr-Lg-OR0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cIt-s6-jVF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="457" y="336"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pushSettings" width="14" height="13"/>
+    </resources>
+</document>

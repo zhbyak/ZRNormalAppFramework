@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ZRAnimatedView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide1" translatesAutoresizingMaskIntoConstraints="NO" id="yz7-Uq-knx">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guideLargeText1" translatesAutoresizingMaskIntoConstraints="NO" id="TVJ-sR-xKl">
+                    <rect key="frame" x="0.0" y="366" width="320" height="42"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guideSmallText1" translatesAutoresizingMaskIntoConstraints="NO" id="V2b-Ap-7h9">
+                    <rect key="frame" x="0.0" y="430" width="320" height="18"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qa-a0-fjD">
+                    <rect key="frame" x="80" y="473" width="161" height="40"/>
+                    <state key="normal" image="guideStart">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="tryButtonClicked" destination="iN0-l3-epB" eventType="touchUpInside" id="JPH-LB-T7R"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="V2b-Ap-7h9" firstAttribute="centerX" secondItem="yz7-Uq-knx" secondAttribute="centerX" id="5wk-Kh-ALp"/>
+                <constraint firstAttribute="trailing" secondItem="yz7-Uq-knx" secondAttribute="trailing" id="Cl4-Xp-PSp"/>
+                <constraint firstAttribute="bottom" secondItem="TVJ-sR-xKl" secondAttribute="bottom" constant="160" id="LFY-8z-YHR"/>
+                <constraint firstItem="yz7-Uq-knx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ZdM-Cu-18X"/>
+                <constraint firstAttribute="bottom" secondItem="5qa-a0-fjD" secondAttribute="bottom" constant="55" id="ews-5q-d5d"/>
+                <constraint firstAttribute="bottom" secondItem="V2b-Ap-7h9" secondAttribute="bottom" constant="120" id="kzR-De-2Kk"/>
+                <constraint firstItem="yz7-Uq-knx" firstAttribute="centerX" secondItem="5qa-a0-fjD" secondAttribute="centerX" id="mGx-i2-zgi"/>
+                <constraint firstItem="yz7-Uq-knx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pgT-3B-Hve"/>
+                <constraint firstItem="yz7-Uq-knx" firstAttribute="centerX" secondItem="TVJ-sR-xKl" secondAttribute="centerX" id="up7-kn-3PD"/>
+                <constraint firstAttribute="bottom" secondItem="yz7-Uq-knx" secondAttribute="bottom" id="vfc-ft-kDZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="guideLargeText" destination="TVJ-sR-xKl" id="piJ-Py-bQH"/>
+                <outlet property="guideSmallText" destination="V2b-Ap-7h9" id="253-Yg-NVf"/>
+                <outlet property="guideView" destination="yz7-Uq-knx" id="g6g-NW-f2B"/>
+                <outlet property="tryButton" destination="5qa-a0-fjD" id="7hq-ps-DbD"/>
+            </connections>
+            <point key="canvasLocation" x="289" y="293"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="guide1" width="320" height="568"/>
+        <image name="guideLargeText1" width="320" height="42"/>
+        <image name="guideSmallText1" width="320" height="18"/>
+        <image name="guideStart" width="161" height="40"/>
+    </resources>
+</document>

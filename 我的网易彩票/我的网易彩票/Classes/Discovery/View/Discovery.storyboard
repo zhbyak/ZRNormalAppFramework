@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EQd-wJ-7bs">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--发现-->
+        <scene sceneID="T6p-fy-IS3">
+            <objects>
+                <tableViewController id="SZH-tC-QGv" customClass="ZRDiscoveryTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="60" sectionHeaderHeight="10" sectionFooterHeight="10" id="DiF-yO-Pr6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="Eh3-HP-sJc">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="qLc-F7-i6t" detailTextLabel="FpC-4u-K8t" imageView="Mzo-Fl-GOk" style="IBUITableViewCellStyleSubtitle" id="1Gx-9S-elF">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Gx-9S-elF" id="Ve4-GX-MgW">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="合买" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qLc-F7-i6t">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="跟着高手买，奖金一起分" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FpC-4u-K8t">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="groupBuyIcon" id="Mzo-Fl-GOk">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="d2C-M0-tvL" kind="show" id="UTG-6K-C59"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="739-QG-7bD">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="vql-Bu-lQJ" detailTextLabel="n0a-Jg-CXn" imageView="fVd-h6-Eor" style="IBUITableViewCellStyleSubtitle" id="vdK-RT-Qdn">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vdK-RT-Qdn" id="gfb-gJ-x9q">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="合买" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vql-Bu-lQJ">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="跟着高手买，奖金一起分" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n0a-Jg-CXn">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="groupBuyIcon" id="fVd-h6-Eor">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="ITB-90-Jpg" detailTextLabel="VYb-Vq-DfT" imageView="LJp-TB-v8I" style="IBUITableViewCellStyleSubtitle" id="D8C-4U-dq4">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D8C-4U-dq4" id="p96-9A-GNf">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="幸运选号" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ITB-90-Jpg">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="引爆财运，命中注定中大奖" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VYb-Vq-DfT">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="luckBetIcon" id="LJp-TB-v8I">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="hW3-n0-RQJ" kind="push" id="xkB-gI-xOW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="Ip3-Eh-QnE">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="A88-Gb-Cg7" detailTextLabel="2Vd-SO-a7N" imageView="Tla-au-NIz" style="IBUITableViewCellStyleSubtitle" id="ZrM-WO-pcE">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZrM-WO-pcE" id="ML8-PF-md1">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="合买" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="A88-Gb-Cg7">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="跟着高手买，奖金一起分" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2Vd-SO-a7N">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="groupBuyIcon" id="Tla-au-NIz">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Znw-Jd-dVh" detailTextLabel="FPh-MP-AuC" imageView="3gs-V2-NSo" style="IBUITableViewCellStyleSubtitle" id="YYB-1a-q59">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YYB-1a-q59" id="sHJ-mR-z3o">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="合买" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Znw-Jd-dVh">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="跟着高手买，奖金一起分" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FPh-MP-AuC">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="groupBuyIcon" id="3gs-V2-NSo">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="SZH-tC-QGv" id="2Cm-MX-zWB"/>
+                            <outlet property="delegate" destination="SZH-tC-QGv" id="Ata-MM-rhm"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="发现" id="kvC-fN-ZPU"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jyb-fi-B8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1398" y="35"/>
+        </scene>
+        <!--合买-->
+        <scene sceneID="oek-Dg-SfS">
+            <objects>
+                <tableViewController id="d2C-M0-tvL" customClass="ZRGroupBuyTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="gPW-lQ-u1c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="0gm-JJ-2wi">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0gm-JJ-2wi" id="NcB-vC-9Qu">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="d2C-M0-tvL" id="n5h-JM-JHr"/>
+                            <outlet property="delegate" destination="d2C-M0-tvL" id="poh-3B-0S3"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="合买" id="KnZ-4q-931"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qXo-av-98r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2060" y="-424"/>
+        </scene>
+        <!--幸运选号-->
+        <scene sceneID="80m-Ns-84Z">
+            <objects>
+                <viewController id="hW3-n0-RQJ" customClass="ZRLuckyController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l7n-hb-1Wq"/>
+                        <viewControllerLayoutGuide type="bottom" id="PqD-vd-TtJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K12-sf-N0S">
+                        <rect key="frame" x="0.0" y="64" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="luck_entry_background" translatesAutoresizingMaskIntoConstraints="NO" id="6CA-0u-4Of">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lucky_entry_light0" translatesAutoresizingMaskIntoConstraints="NO" id="bxx-Y1-XcI">
+                                <rect key="frame" x="72" y="33" width="231" height="29"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkB-GJ-APU">
+                                <rect key="frame" x="43" y="110" width="137" height="140"/>
+                                <state key="normal" image="luck_entry_birthday_button_normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKk-HU-bd5">
+                                <rect key="frame" x="199" y="111" width="130" height="139"/>
+                                <state key="normal" image="luck_entry_number_button_normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npA-fH-Es0">
+                                <rect key="frame" x="35" y="258" width="153" height="152"/>
+                                <state key="normal" image="luck_entry_lots_button_normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tns-Ta-G5M">
+                                <rect key="frame" x="194" y="258" width="140" height="144"/>
+                                <state key="normal" image="luck_entry_roulette_button_normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="luckyButton" destination="hW3-n0-RQJ" eventType="touchUpInside" id="UAm-3q-om1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="npA-fH-Es0" firstAttribute="top" secondItem="ZkB-GJ-APU" secondAttribute="bottom" constant="8" id="7jh-kh-ZIR"/>
+                            <constraint firstItem="RKk-HU-bd5" firstAttribute="centerY" secondItem="ZkB-GJ-APU" secondAttribute="centerY" id="BU7-be-Qfr"/>
+                            <constraint firstItem="tns-Ta-G5M" firstAttribute="centerX" secondItem="RKk-HU-bd5" secondAttribute="centerX" id="TvX-ni-8jQ"/>
+                            <constraint firstItem="ZkB-GJ-APU" firstAttribute="centerX" secondItem="npA-fH-Es0" secondAttribute="centerX" id="Vhh-7t-Min"/>
+                            <constraint firstItem="tns-Ta-G5M" firstAttribute="top" secondItem="RKk-HU-bd5" secondAttribute="bottom" constant="8" id="cAV-SN-kzq"/>
+                            <constraint firstItem="6CA-0u-4Of" firstAttribute="top" secondItem="ZkB-GJ-APU" secondAttribute="bottom" constant="-250" id="dj6-jZ-czw"/>
+                            <constraint firstAttribute="bottom" secondItem="6CA-0u-4Of" secondAttribute="bottom" id="jXt-vi-gwU"/>
+                            <constraint firstItem="6CA-0u-4Of" firstAttribute="top" secondItem="bxx-Y1-XcI" secondAttribute="bottom" constant="-62" id="k1q-BU-Fgw"/>
+                            <constraint firstItem="6CA-0u-4Of" firstAttribute="top" secondItem="K12-sf-N0S" secondAttribute="top" id="lUC-uF-kxZ"/>
+                            <constraint firstItem="6CA-0u-4Of" firstAttribute="centerX" secondItem="ZkB-GJ-APU" secondAttribute="centerX" constant="76" id="lYI-uQ-3pr"/>
+                            <constraint firstAttribute="trailing" secondItem="6CA-0u-4Of" secondAttribute="trailing" id="nbA-Gy-kmY"/>
+                            <constraint firstItem="6CA-0u-4Of" firstAttribute="centerX" secondItem="bxx-Y1-XcI" secondAttribute="centerX" id="q3Q-sG-eCG"/>
+                            <constraint firstItem="6CA-0u-4Of" firstAttribute="leading" secondItem="K12-sf-N0S" secondAttribute="leading" id="q7s-Lt-bOP"/>
+                            <constraint firstItem="RKk-HU-bd5" firstAttribute="centerX" secondItem="6CA-0u-4Of" secondAttribute="centerX" constant="76" id="u2A-Kq-VLq"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="幸运选号" id="GQQ-cD-LIM"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="lightsView" destination="bxx-Y1-XcI" id="rE1-jX-dYv"/>
+                        <segue destination="X7w-WR-x6x" kind="presentation" identifier="testSegue" id="91e-QE-cg1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jKJ-WU-iz9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2102.5" y="349.5"/>
+        </scene>
+        <!--Wheel Controller-->
+        <scene sceneID="ccn-KQ-FmW">
+            <objects>
+                <viewController id="X7w-WR-x6x" customClass="ZRWheelController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vPD-SY-qPU"/>
+                        <viewControllerLayoutGuide type="bottom" id="tRs-4D-cID"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ypg-ex-JgP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LuckyBackground" translatesAutoresizingMaskIntoConstraints="NO" id="uOo-XB-SS2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJX-IG-RBv">
+                                <rect key="frame" x="16" y="20" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="iVy-dr-vPr"/>
+                                    <constraint firstAttribute="width" constant="22" id="tGp-Se-Ph6"/>
+                                </constraints>
+                                <state key="normal" image="luckyNumber_dismissButton_image">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeButtonClicked" destination="X7w-WR-x6x" eventType="touchUpInside" id="KuL-MB-Ugo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="uOo-XB-SS2" secondAttribute="bottom" id="4q8-KJ-UME"/>
+                            <constraint firstItem="KJX-IG-RBv" firstAttribute="leading" secondItem="Ypg-ex-JgP" secondAttribute="leadingMargin" id="Bui-Qr-3Ls"/>
+                            <constraint firstItem="KJX-IG-RBv" firstAttribute="top" secondItem="Ypg-ex-JgP" secondAttribute="topMargin" constant="20" id="ClD-Pd-P9o"/>
+                            <constraint firstAttribute="trailing" secondItem="uOo-XB-SS2" secondAttribute="trailing" id="K6Y-RE-18y"/>
+                            <constraint firstItem="uOo-XB-SS2" firstAttribute="top" secondItem="Ypg-ex-JgP" secondAttribute="top" id="M6F-AZ-FKM"/>
+                            <constraint firstItem="uOo-XB-SS2" firstAttribute="leading" secondItem="Ypg-ex-JgP" secondAttribute="leading" id="sjj-OK-Ukt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jqz-8S-NNR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2753.5" y="335.5"/>
+        </scene>
+        <!--Nav Controller-->
+        <scene sceneID="rxc-P9-iPY">
+            <objects>
+                <navigationController id="EQd-wJ-7bs" customClass="ZRNavController" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YPm-8m-eff">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="SZH-tC-QGv" kind="relationship" relationship="rootViewController" id="8uP-2V-vqN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kTf-ob-1Ey" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="578" y="35"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LuckyBackground" width="320" height="368"/>
+        <image name="groupBuyIcon" width="39" height="40"/>
+        <image name="luckBetIcon" width="39" height="39"/>
+        <image name="luck_entry_background" width="320" height="368"/>
+        <image name="luck_entry_birthday_button_normal" width="137" height="140"/>
+        <image name="luck_entry_lots_button_normal" width="153" height="152"/>
+        <image name="luck_entry_number_button_normal" width="130" height="139"/>
+        <image name="luck_entry_roulette_button_normal" width="140" height="144"/>
+        <image name="luckyNumber_dismissButton_image" width="32" height="32"/>
+        <image name="lucky_entry_light0" width="231" height="29"/>
+    </resources>
+</document>
